@@ -32,9 +32,9 @@ visent à relever le niveau, pas à industrialiser l'existant. Plusieurs donnée
 (autorisations clients, chiffres officiels, anecdotes de projet…) restent à fournir par la
 direction — voir [CLAUDE.md § 8](CLAUDE.md#8-état-des-blocages).
 
-## Vérifications demandées avant mise en production
+## Vérifications demandées
 
-Ce qui suit n'est pas une nouvelle proposition : c'est un résumé, à l'usage de la direction,
+Ce qui suit n'est pas une nouvelle proposition : c'est un résumé,
 de ce qui est déjà configuré dans les agents et qui reste marqué « à valider » ou bloquant
 dans les fichiers de référence. Les tableaux ci-dessous sont la copie exacte de ce qui est
 déjà en place — l'objectif est de faire vérifier et trancher ces points, pas de les
@@ -85,8 +85,7 @@ serveur MCP.
 
 C'est la décision la plus structurante pour la suite. Deux voies possibles.
 
-**Voie A — MCP Zernio.** Plateforme d'agrégation multi-réseaux, déjà connectée à notre
-environnement Claude.
+**Voie A — MCP Zernio.** Plateforme d'agrégation multi-réseaux: https://zernio.com/.
 
 Avantages :
 
@@ -97,7 +96,6 @@ Avantages :
 | Programmation native | Files d'attente, créneaux récurrents, publication différée |
 | Recommandation de créneau | Outil intégré de meilleur moment de publication |
 | Validation avant envoi | Vérification de longueur et de conformité |
-| Analytics inclus | Alimente directement le futur agent 05 |
 | Modération | Gestion des commentaires et mentions |
 | Aucun processus d'approbation | Pas de dossier à déposer, pas d'attente |
 
@@ -123,7 +121,7 @@ Avantages :
 | Souveraineté des données | Rien ne transite par un prestataire |
 | Capitalisation interne | Compétence d'intégration acquise et réutilisable |
 
-Inconvénients — c'est ici que le sujet se joue :
+Inconvénients:
 
 | Point | Détail |
 |---|---|
@@ -135,38 +133,9 @@ Inconvénients — c'est ici que le sujet se joue :
 | Mono-plateforme | Il faudrait développer autant d'intégrations que de réseaux |
 | Maintenance à notre charge | Chaque évolution de l'API est un chantier |
 
-**Le point décisif : le carrousel PDF.** C'est l'élément qui doit orienter la décision, et il
-est rarement anticipé. Les posts document permettent de garder le lecteur dans le fil
-LinkedIn tout en délivrant un contenu multi-pages, ce qui explique que l'algorithme les
-favorise. Chaque balayage compte dans le temps de lecture, une métrique que l'algorithme
-pondère fortement dans sa décision de diffusion.
 
-Le carrousel est le format le plus performant sur LinkedIn. Il n'est pas publiable par
-l'API. Quelle que soit la voie retenue, ce format devra passer par une publication manuelle.
-Cela réduit considérablement l'intérêt d'une automatisation complète.
 
-**Notre recommandation : Voie A (Zernio) en phase 1**, pour trois raisons :
-
-1. Le gain de l'API est marginal. Le carrousel — notre format le plus important — reste
-   manuel dans les deux cas. L'API automatiserait les posts texte et image, soit une partie
-   seulement du besoin.
-2. Le délai est disqualifiant en phase de test. Attendre deux à quatre semaines une
-   approbation pour valider une hypothèse éditoriale n'a pas de sens.
-3. Le vrai enjeu n'est pas technique. Ce qui coûte du temps aujourd'hui, c'est produire un
-   bon contenu, pas cliquer sur « publier ». Un humain qui copie-colle un post prend deux
-   minutes.
-
-Réévaluer en phase 3, si et seulement si :
-
-- Le volume dépasse 15 posts par mois sur plusieurs plateformes
-- Le coût de l'abonnement devient supérieur au coût de développement
-- Un besoin apparaît que Zernio ne couvre pas
-
-Dans tous les cas, nous recommandons de conserver la validation humaine avant publication.
-Un post LinkedIn raté engage la marque publiquement et est irréversible. Le gain de temps
-d'une publication automatique ne justifie pas ce risque.
-
-### 5. Points complémentaires à arbitrer
+### 5. Points complémentaires à arbitrer (le but étant de rendre l'agent plus performant)
 
 **5.1 Les clients citables — 🔴 bloquant.** Aucun client n'a donné d'autorisation écrite.
 Conséquence directe : aucun cas client publiable, alors que c'est le format qui convertit le
@@ -195,7 +164,7 @@ reste théorique sans les noms des concurrents réellement rencontrés en appel 
 *Action* : direction commerciale — les 5 concurrents les plus fréquents, et les motifs de
 gain et de perte des derniers deals.
 
-### 6. Une règle que nous te demandons de valider explicitement
+### 6. Une règle à valider explicitement
 
 Les agents sont configurés pour refuser certaines demandes, y compris lorsqu'elles viennent
 de la direction :
