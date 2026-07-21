@@ -189,6 +189,43 @@ dysfonctionnement.
 Si tu souhaites lever une de ces règles, la discussion doit porter sur la ligne éditoriale —
 pas se régler post par post.
 
+## Déploiement
+
+Aujourd'hui les agents tournent via Claude Code, en local, dans ce dépôt. Pour qu'une
+personne non technique puisse les utiliser, deux options selon le plan claude.ai
+de l'organisation. Les `SKILL.md` ont déjà le frontmatter `name` / `description` attendu par
+les Skills personnalisées — pas de reformatage de contenu nécessaire.
+
+### Option A — Team/Enterprise : Skills personnalisées
+
+1. Un admin du workspace active les Skills personnalisées (Settings → Capabilities).
+2. Chaque dossier d'agent (`agents/research-marketing/`, `agents/copy-social/`,
+   `agents/visual-social/`) est packagé en zip avec son `SKILL.md`, son dossier
+   `references/`, **et** l'ensemble de `shared/` — les Skills n'ont pas de dossier commun
+   entre elles, donc `shared/` doit être dupliqué dans chaque zip.
+3. L'admin upload les trois zips (Settings → Capabilities → Skills → Upload) et les active
+   pour le groupe/les utilisateurs marketing.
+4. Usage : chat normal sur claude.ai — le bon agent s'active tout seul selon la demande,
+   grâce à sa `description`.
+
+### Option B — Pro : Projets
+
+1. Créer trois Projets distincts (pas un seul pour les trois agents, sinon le routage entre
+   eux devient flou pour Claude) : *SWT — Research*, *SWT — Copy*, *SWT — Visual*.
+2. Dans chaque Projet, ajouter en connaissances le `SKILL.md` de l'agent, son
+   `references/`, et l'ensemble de `shared/`.
+3. Instructions personnalisées du Projet : demander à Claude de lire entièrement son
+   `SKILL.md` et les fichiers de `shared/` avant de répondre, et d'appliquer les règles
+   absolues à la lettre.
+4. Usage : le marketing ouvre le bon Projet et chatte normalement.
+
+### Point commun aux deux options
+
+Ni claude.ai ni un Projet n'a accès au système de fichiers ou à Git : la sortie arrive en
+message de chat, pas dans `output/`. Il faut soit qu'une personne copie-colle le livrable
+dans le dépôt, soit accepter que `output/` ne soit alimenté que depuis Claude Code — à
+trancher selon qui doit rester la source de vérité.
+
 ### Annexe
 
 ```
