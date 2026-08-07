@@ -15,6 +15,7 @@
 | F4 | Chiffre / donnée | 3 | P1, P3 | 2 / mois |
 | F5 | Coulisses & équipe | 5, 2 | P4 | 2 / mois |
 | F6 | Engagement & RSE | 4 | P5, P4 | 1 / mois |
+| F7 | Circonstance & moments d'équipe | aucun (hors territoire) | P4, P5 | 2 / mois max (quota) |
 
 ---
 
@@ -256,6 +257,50 @@ commercialement ? Si non, il ne doit pas sortir.
 
 ---
 
+## F7 — Circonstance & moments d'équipe
+
+**Autorisé sous conditions** depuis la décision de la direction (voir
+`shared/ligne-editoriale.md` § 5 bis et `SKILL.md` § « Les posts de
+circonstance »). Ce format marque un moment — vœux, fête du travail, team
+building — **uniquement s'il porte une substance concrète**.
+
+**Structure**
+```
+[HOOK — ancré dans un fait, pas dans le vœu lui-même]
+
+[LE MOMENT — de quoi il s'agit, brièvement]
+
+[L'ENSEIGNEMENT OU LE BILAN — le concret : ce qui a été fait, appris, décidé]
+
+[éventuellement : la projection — au concret, jamais une intention creuse]
+
+#hashtags
+```
+
+**Longueur** : 500–900 caractères
+
+**Règles spécifiques — ce sont les conditions de la décision**
+- **Substance obligatoire.** Un vœu creux ne sort pas. Le post s'ancre dans un
+  fait, un bilan, un enseignement. C'est la différence entre « belle année pleine
+  d'innovation » et « voilà ce qu'on a livré cette année, et ce qu'on en retient ».
+- **Quota : 2 par mois maximum.** Ces posts ne prennent pas la place du contenu
+  de fond (cible : 40 % de territoire Salesforce, formats F1/F2).
+- **Au passé et au concret.** Pas de déclaration d'intention au futur non adossée
+  à un fait.
+- **Aucun appel commercial.**
+- **Cas B proscrit.** Ne nomme ni ne rend identifiable une personne sur un
+  critère protégé (religion, origine, genre, santé, situation familiale,
+  orientation). Ces sujets se traitent à l'échelle de l'entreprise. Voir
+  `SKILL.md` § « Personnes et sujets sensibles ».
+
+**Ce format ne porte pas de territoire éditorial propre** : il s'ajoute dans la
+limite du quota, sans réduire la part des territoires 1 à 5.
+
+**Le test** : est-ce que ce post apprend ou rappelle quelque chose de concret au
+lecteur ? Si ce n'est qu'un vœu, il ne sort pas.
+
+---
+
 ## Choix du format — arbre de décision
 
 ```
@@ -275,6 +320,10 @@ Le sujet concerne l'équipe, un poste, notre façon de travailler ?
 Le sujet concerne nos actions solidaires ?
 └─ F6 Engagement & RSE
 
+Le sujet marque un moment de circonstance (vœux, fête du travail, team building) ?
+└─ F7 Circonstance — uniquement avec substance, dans le quota de 2/mois,
+   cas B exclu (jamais nommer une personne sur un critère protégé)
+
 Aucun de ces cas ?
 └─ Le sujet n'est probablement pas pour nous. Retour à l'agent Research.
 ```
@@ -291,6 +340,12 @@ Aucun de ces cas ?
 | F4 Chiffre / donnée | 1 | 3 |
 | F5 Coulisses & équipe | 1 | 5 |
 | F6 Engagement & RSE | 1 | 4 |
+
+Ces 12 posts de fond restent le socle. **F7 (circonstance) s'ajoute par-dessus,
+dans la limite de 2 par mois**, et ne remplace aucun de ces 12 : il ne réduit
+donc jamais la part de F1/F2 (le cœur territoire Salesforce). Un mois sans moment
+de circonstance à marquer est un mois à zéro F7 — le quota est un plafond, pas
+un objectif à remplir.
 
 Cette répartition reflète les pourcentages de `shared/ligne-editoriale.md` § 6.
 Elle est indicative : l'agent Analytics l'ajustera avec les données réelles

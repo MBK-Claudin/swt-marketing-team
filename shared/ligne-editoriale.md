@@ -108,6 +108,52 @@ Ces expressions ne doivent jamais apparaître dans un contenu Sunwise :
 
 ---
 
+## 5 bis. Posts de circonstance — règle encadrée
+
+Les posts de circonstance étaient auparavant proscrits. **Cette décision de la
+direction les autorise désormais, sous conditions**, en distinguant deux cas que
+l'ancienne règle confondait.
+
+### Cas A — Posts de circonstance : autorisés sous conditions
+
+Vœux de nouvelle année, fêtes de fin d'année, fête du travail, team building,
+moments d'équipe génériques. **Autorisés**, à deux conditions strictes :
+
+1. **Substance.** Le post porte un ancrage concret — un fait, un bilan, un
+   enseignement. Le problème des anciens posts n'était pas qu'ils existaient,
+   mais qu'ils étaient vides. Des vœux creux restent bannis ; des vœux ancrés
+   dans un bilan concret passent.
+
+   | ❌ Vœux creux | ✅ Vœux avec substance |
+   |---|---|
+   | « Toute l'équipe vous souhaite une belle année, pleine de réussite et d'innovation. » | « En 2025, on a repris quatre orgs Salesforce qu'on ne connaissait pas. Ce que ça nous a appris pour 2026 : [enseignement concret]. Bonne année. » |
+
+2. **Quota strict : 2 posts de circonstance par mois maximum.** Ils ne prennent
+   pas la place du contenu de fond (cible : 40 % de territoire Salesforce). Un
+   post de circonstance **ne porte pas de territoire éditorial propre** : il
+   s'ajoute dans la limite du quota, sans réduire la cible des territoires 1 à 5.
+
+### Cas B — Fêtes liées à un critère protégé : restriction maintenue
+
+Fêtes religieuses, journées liées au genre, à l'origine, au handicap — dès lors
+qu'elles conduisent à **nommer ou désigner une personne** sur ce critère.
+**La restriction reste entière.** Ce n'est pas une question de ligne éditoriale,
+c'est une protection des collaborateurs.
+
+- Ne jamais nommer ni rendre identifiable un collaborateur sur un critère
+  protégé (religion, origine, genre, état de santé, situation familiale,
+  orientation).
+- Ces sujets se traitent **à l'échelle de l'entreprise** — une politique, une
+  action mise en place — jamais à l'échelle de l'individu.
+- La règle du petit effectif s'applique : dans une équipe réduite, « notre
+  consultante » identifie la personne sans la nommer. Voir la section
+  « Personnes et sujets sensibles » du SKILL de Copy, qui est le point d'ancrage
+  du cas B.
+
+Lever le cas A n'assouplit en rien le cas B.
+
+---
+
 ## 6. Nos territoires éditoriaux
 
 ### Territoire 1 — Salesforce en contexte réel (40 % du contenu)

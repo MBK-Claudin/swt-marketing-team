@@ -121,7 +121,7 @@ Cette section remplace provisoirement les modèles.
 | « Nous sommes fiers de… » en ouverture | Le fait lui-même, sans commentaire sur notre fierté |
 | CTA générique (« et vous, quels outils… ? ») | Une question qu'un pair peut réellement répondre depuis son vécu |
 | « commentez, partagez, identifiez » | Rien. L'engagement se mérite. |
-| Posts de circonstance (vœux, fêtes) | **Proscrits.** Voir `SKILL.md` § « Les posts de circonstance ». Ils ne construisent aucune crédibilité et diluent l'audience. |
+| Posts de circonstance **vides** (vœux creux) | Le sujet est autorisé sous conditions (cas A : substance + quota de 2/mois) ; c'est le *vide* qui reste à éviter, pas le fait de marquer un moment. Voir `SKILL.md` § « Les posts de circonstance ». |
 | Un post = trois messages | Un post = une idée |
 
 ### Le déséquilibre à corriger
@@ -130,7 +130,7 @@ Cette section remplace provisoirement les modèles.
 Répartition actuelle          →   Répartition cible (ligne-editoriale § 6)
 
 Vie d'équipe / RH      45 %   →   Territoire 5 (équipe)          10 %
-Circonstance / vœux    27 %   →   (hors répartition)              0 %
+Circonstance / vœux    27 %   →   F7, plafonné à 2/mois (quota)   ≤ ~15 %
 Engagement / RSE       18 %   →   Territoire 4 (engagement)      10 %
 Institutionnel          9 %   →   Territoire 1 (Salesforce)      40 %
 Expertise Salesforce    0 %   →   Territoire 2 (France-Afrique)  20 %
@@ -164,19 +164,24 @@ appliquer lundi matin.
 
 ---
 
-### CE2 — Le post d'intention
+### CE2 — Le post de circonstance **vide**
 
 **Post source** : 1 (Team Building, objectifs 2026)
-**Motif** : quatre objectifs déclarés au futur, aucun fait au passé. « Renforcer
-la cohésion », « innover davantage », « créer plus de valeur » — ces phrases
-pourraient figurer dans la communication de n'importe quelle entreprise du
-monde. Aucun élément n'identifie Sunwise.
+**Motif** : ce n'est plus « post de circonstance = interdit » — marquer un moment
+d'équipe est désormais autorisé (cas A). Le défaut est l'**absence de
+substance** : quatre objectifs déclarés au futur, aucun fait au passé.
+« Renforcer la cohésion », « innover davantage », « créer plus de valeur » — ces
+phrases pourraient figurer dans la communication de n'importe quelle entreprise
+du monde. Aucun élément n'identifie Sunwise.
 
-**La leçon** : le test de signature de `shared/ligne-editoriale.md` § 11 — si on
-retire le logo, un lecteur régulier doit deviner que c'est nous. Ici, non.
+**La leçon** : le sujet n'était pas le problème, le vide l'était. Le test de
+signature de `shared/ligne-editoriale.md` § 11 — si on retire le logo, un lecteur
+régulier doit deviner que c'est nous — échoue ici faute d'ancrage concret.
 
-**Ce qu'il aurait fallu** : une seule chose concrète décidée pendant ce
-week-end, et ce qu'elle change pour les clients ou l'équipe.
+**Ce qu'il aurait fallu** : garder le moment d'équipe, mais l'ancrer dans une
+seule chose concrète décidée pendant ce week-end, et ce qu'elle change pour les
+clients ou l'équipe. C'est exactement la version réussie d'un post F7 : même
+sujet, mais avec de la substance et un fait vérifiable au lieu d'une intention.
 
 ---
 
@@ -322,6 +327,6 @@ Débloque F3 et les chiffres de résultat. Voir `shared/offres.md` § 8 et § 11
 |---|---|---|
 | Produire 3-5 posts F2 et les valider | Claudin + consultants | 🔴 Critique |
 | Collecter 3 anecdotes projet anonymisables | Claudin + équipe | 🔴 Critique |
-| Décider si la direction valide l'arrêt des posts de circonstance (déjà proscrits par le SKILL) | Direction | 🟠 Haute |
+| Suivre le respect du quota de 2 posts de circonstance/mois (décision direction appliquée : cas A autorisé avec substance, cas B maintenu) | Claudin | 🟡 Moyenne |
 | Autorisations clients écrites | Direction commerciale | 🟠 Haute |
 | Relever les métriques des 11 posts existants pour établir une médiane | Agent 05 | 🟡 Moyenne |

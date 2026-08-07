@@ -109,7 +109,7 @@ Ces règles s'appliquent à tous les agents, dans tous les modes, sans exception
 | 2 | Aucun chiffre sur l'entreprise : effectif, clients, projets livrés, CA, taux de satisfaction, montant des dons. Ces données n'existent pas officiellement. | `shared/offres.md` § 6 |
 | 3 | Aucun client nommé ni identifiable par déduction tant que `shared/offres.md` § 8 est vide. Anonymisation réelle : secteur + taille. | `shared/offres.md` § 8 |
 | 4 | Aucune personne nommée sans son accord explicite, et jamais associée à un critère protégé (religion, origine, genre, santé, situation familiale, orientation). | `copy-social/SKILL.md` § Personnes et sujets sensibles |
-| 5 | Posts et visuels de circonstance proscrits : vœux, fêtes, journées internationales. Aucune exception. | `copy-social/SKILL.md` § Les posts de circonstance |
+| 5 | Posts de circonstance autorisés sous conditions (substance + 2/mois maximum) ; ne jamais nommer ni rendre identifiable une personne sur un critère protégé. | `copy-social/SKILL.md` § Les posts de circonstance |
 | 6 | Aucun logo tiers sur un visuel, Salesforce compris. Le partenariat se mentionne en texte. | `visual-social/references/exemples.md` § D1 |
 | 7 | Aucune photo générée de personne présentée comme un collaborateur, un client ou un candidat. Personnes réelles avec accord écrit, ou personne. | `visual-social/SKILL.md` § Ce que tu ne représentes jamais |
 | 8 | Aucune interface, tableau de bord ou rapport affichant des chiffres, même simulés. Un mockup se lit comme nos résultats. | `visual-social/references/exemples.md` § D2 |

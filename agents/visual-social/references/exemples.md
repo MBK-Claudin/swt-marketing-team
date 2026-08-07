@@ -13,9 +13,9 @@
 | V1 | Recrutement développeur web | 🟠 Structure à reprendre, couleur à corriger |
 | V2 | Expertise Salesforce | 🔴 Hors charte — bleu ardoise |
 | V3 | Mains jointes / collaboration | 🔴 À abandonner — hors palette, cliché visuel |
-| V4 | Vœux 2026 | 🔴 À abandonner — format proscrit + logo tiers |
-| V5 | 8 mars | 🟠 Charte respectée, sujet proscrit |
-| V6 | Eïd Mubarak | 🔴 À abandonner — territoire interdit |
+| V4 | Vœux 2026 | 🔴 À abandonner — logo tiers déformé + texte généré (le sujet, lui, est désormais permis : cas A) |
+| V5 | 8 mars | 🟠 Charte respectée, mais sujet écarté au titre du cas B (genre) |
+| V6 | Eïd Mubarak | 🔴 À abandonner — cas B maintenu, territoire interdit (religion) |
 | V7 | 1er mai | 🔴 Données fictives affichées — risque réel |
 
 **Deux visuels sur sept sont dans la charte couleur.** Aucun n'est
@@ -188,16 +188,28 @@ illisible.
 
 C'est le point le plus sérieux du corpus. Il ne s'agit pas de style.
 
-### D3 — Les visuels de circonstance
+### D3 — Les visuels de circonstance : la règle a changé
 
-**Où** : V4 (vœux 2026), V5 (8 mars), V6 (Eïd)
+**Décision de la direction** : les posts de circonstance (cas A — vœux, fête du
+travail, moments d'équipe) sont désormais **autorisés sous conditions**
+(substance + quota de 2/mois). La règle visuelle suit : **un visuel de
+circonstance est autorisé dès lors que le post associé l'est**. Voir `SKILL.md`
+de l'agent 02 § « Les posts de circonstance » et `shared/ligne-editoriale.md`
+§ 5 bis.
 
-`SKILL.md` de l'agent 02 § « Les posts de circonstance » proscrit ces posts.
-La règle s'applique identiquement aux visuels : pas de post, pas de visuel.
+Ce qui reste écarté ici ne l'est plus au titre du « sujet de circonstance », mais
+pour des motifs propres à chaque visuel :
 
-V6 pose un problème supplémentaire : il mobilise une imagerie religieuse
-complète — mosquées, croissant, lanternes, Coran ouvert. La religion est un
-territoire interdit par la ligne éditoriale.
+- **V4 (vœux 2026)** : le sujet est permis (cas A). Le visuel reste à abandonner
+  pour ses **autres** défauts, déjà documentés : logo Salesforce recomposé et
+  déformé (§ D1) et texte généré dans l'image — « Joyeuse » et « Talents »
+  déformés (§ C5). Refait proprement, avec substance, un visuel de vœux serait
+  recevable.
+- **V5 (8 mars) et V6 (Eïd)** : écartés au titre du **cas B**, maintenu. V5
+  singularise le genre ; V6 mobilise une imagerie religieuse complète — mosquées,
+  croissant, lanternes, Coran ouvert. Les fêtes et journées liées à un critère
+  protégé ne se traitent jamais à l'échelle d'une personne, et la religion reste
+  un territoire interdit par la ligne éditoriale. Ces deux-là ne se refont pas.
 
 ### D4 — L'imagerie cliché
 
@@ -271,7 +283,7 @@ gabarit G1.
 | 7 | Texte composé, non déformé | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 8 | Capitales ≤ 5 mots | ✅ | ✅ | — | ✅ | ❌ | ✅ | ❌ |
 | 9 | ≤ 3 blocs d'information | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| 10 | Sujet conforme à la ligne éditoriale | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| 10 | Sujet conforme à la ligne éditoriale | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 
 **Aucun visuel ne passe les dix contrôles.** Le plus proche est V1, qui échoue
 sur deux points corrigeables : la nuance de bleu et la photo générée.

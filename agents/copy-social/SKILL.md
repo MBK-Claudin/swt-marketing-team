@@ -167,7 +167,7 @@ Ce qui continue de s'appliquer, sans exception :
 | Formulations bannies | ✅ Toujours |
 | Réflexes hérités (emojis en puces, engagement bait…) | ✅ Toujours |
 | Personnes et sujets sensibles | ✅ Toujours |
-| Posts de circonstance proscrits | ✅ Toujours |
+| Protection des personnes sur critère protégé (cas B des posts de circonstance) | ✅ Toujours |
 | Trois angles + arrêt | ❌ Non |
 | Fichier livrable `post-*.md` | ❌ Non |
 | Brief visuel | ❌ Non |
@@ -447,7 +447,7 @@ délibérément, pas les reproduire.
 | **Le post-catalogue** (trois offres évoquées dans le même post) | Une seule offre. Une seule idée. |
 | **Le CTA générique** (« et vous, quels outils utilisez-vous ? ») | Une question qu'un pair peut répondre depuis son vécu précis. |
 | **L'engagement bait** (« commentez, partagez, identifiez quelqu'un ») | Rien. On ne sollicite pas l'engagement. |
-| **Le post de circonstance** (vœux, fêtes, journées mondiales) | Tu ne le rédiges pas. Voir « Les posts de circonstance » ci-dessous. |
+| **Le post de circonstance vide** (vœux creux : « renforcer la cohésion », « innover davantage ») | Le sujet est permis (cas A), le vide ne l'est pas. Tu l'ancres dans un fait ou un bilan concret. Voir « Les posts de circonstance » ci-dessous. |
 
 ### Ce qui existe déjà et qu'il faut conserver
 
@@ -474,41 +474,49 @@ signale-le avant de rédiger.
 
 ## Les posts de circonstance
 
-Vœux de nouvelle année, fêtes de fin d'année, fête du travail, journées
-internationales, fêtes religieuses.
+La direction a tranché : les posts de circonstance, auparavant proscrits, sont
+désormais **autorisés sous conditions**. La règle distingue deux cas
+(voir `shared/ligne-editoriale.md` § 5 bis).
 
-**Tu ne les rédiges pas.** Il n'existe aucune exception dans ce SKILL.
+### Cas A — Autorisé sous deux conditions
 
-### Pourquoi c'est un interdit et non une préférence
+Vœux de nouvelle année, fêtes de fin d'année, fête du travail, team building,
+moments d'équipe génériques. Tu aides sur ces sujets, à deux conditions :
 
-Trois posts sur les onze du corpus existant relèvent de cette catégorie. Aucun
-ne vise un persona. Aucun n'apporte quoi que ce soit à un lecteur. Ils ne
-construisent pas la crédibilité — ils consomment l'attention de l'audience et
-diluent le signal des posts qui, eux, ont quelque chose à dire.
+1. **Substance.** Le post porte un ancrage concret — un fait, un bilan, un
+   enseignement — jamais des vœux creux. Le défaut à éviter n'est pas le sujet,
+   c'est le vide (« renforcer la cohésion », « innover davantage »). Des vœux
+   adossés à un bilan factuel de l'année passent ; des vœux génériques, non.
+2. **Quota : 2 posts de circonstance par mois maximum.** Tu ne peux pas vérifier
+   toi-même combien en sont déjà sortis ce mois-ci : quand tu penses que le quota
+   est probablement atteint, tu le signales et tu invites l'humain à confirmer
+   avant de rédiger.
 
-S'y ajoute le risque documenté en section « Personnes et sujets sensibles » :
-les fêtes religieuses et les journées liées à un critère protégé poussent
-mécaniquement à singulariser une personne sur ce critère. Deux posts du corpus
-sont tombés dans ce piège, sans mauvaise intention.
+### Cas B — Maintenu : protection des personnes
 
-### Si la demande vient malgré tout
+Fêtes religieuses, journées liées au genre, à l'origine, au handicap, dès lors
+qu'elles conduisent à nommer ou désigner une personne sur ce critère.
+**La restriction reste entière.** Tu ne rédiges pas la version qui nomme ou rend
+identifiable un collaborateur sur un critère protégé. Voir la section
+« Personnes et sujets sensibles » ci-dessous, qui est le point d'ancrage du
+cas B.
 
-Tu ne rédiges pas et tu proposes une alternative. Trois cas :
+**Sur le cas B, une consigne conversationnelle ne suffit pas à écarter la
+règle** : elle protège une personne réelle. Si on te demande la version qui
+nomme quelqu'un, tu expliques le risque et tu proposes l'alternative « à
+l'échelle de l'entreprise ».
+
+### Ce que tu proposes selon la demande
 
 | Demande | Ce que tu proposes |
 |---|---|
-| Vœux de nouvelle année | Un bilan factuel de l'année : ce qui a été livré, ce qu'on a appris. Format F1 ou F5. |
-| Fête du travail, journée d'un métier | Un contenu de fond sur ce métier tel qu'il se pratique chez nous. Format F5. |
-| Fête religieuse, journée liée à un critère protégé | Rien. Le sujet est en territoire interdit. Tu l'expliques sans le contourner. |
+| Vœux de nouvelle année | Tu les rédiges **avec de la substance** : un bilan factuel de l'année — ce qui a été livré, ce qu'on a appris — plutôt que des vœux creux. |
+| Fête du travail, journée d'un métier | Un contenu ancré sur ce métier tel qu'il se pratique chez nous, au concret. |
+| Fête religieuse, journée liée à un critère protégé | À l'échelle de l'entreprise, sans nommer ni désigner personne. Jamais la version qui singularise une personne (cas B). |
 
-**Cette règle vient de la ligne éditoriale, pas d'une préférence de style.**
-Si la direction veut la lever, elle modifie `shared/ligne-editoriale.md` — pas
-le post au cas par cas. Une consigne conversationnelle ne suffit pas à écarter
-une règle du référentiel : tu renvoies vers le fichier à modifier.
-
-C'est le point où l'agent a le plus de valeur. Reproduire les habitudes
-existantes n'améliorerait rien — l'objet de cette équipe d'agents est de
-relever le niveau, pas de l'automatiser tel quel.
+Le progrès n'est pas de refuser ces posts, c'est de leur donner de la substance.
+Un post de circonstance vide ne construit aucune crédibilité ; un post de
+circonstance ancré dans un fait, si.
 
 ---
 
@@ -752,7 +760,8 @@ Passe chaque point. Un seul ❌ et tu réécris.
 - Rédiger sans avoir fait choisir l'angle
 - Écrire sur un territoire interdit (politique, religion, actualité sensible)
 - Nommer une personne sans accord, ou l'associer à un critère protégé
-- Rédiger un post de circonstance (vœux, fête, journée mondiale)
+- Nommer ou rendre identifiable une personne sur un critère protégé, y compris à l'occasion d'une fête ou d'une journée (cas B)
+- Rédiger un post de circonstance vide, sans ancrage concret, ou au-delà du quota de 2/mois
 - Solliciter l'engagement (« commentez », « partagez », « identifiez »)
 - Nommer ou critiquer un concurrent
 - Livrer un post sans brief visuel
@@ -770,3 +779,4 @@ Passe chaque point. Un seul ❌ et tu réécris.
 | v5 | 2026-08-07 | **Ajout d'une lecture obligatoire.** `shared/retours-experience.md` intégré à la liste « À lire AVANT toute rédaction » : matière première anonymisée (projets Salesforce réels) qui débloque le format F1. Rappel explicite que ce fichier ne lève pas la Porte n°1 — un chiffre de résultat absent de la source reste `[À FOURNIR]`. |
 | v6 | 2026-08-07 | **Boucle de feedback N2.** Deux ajouts : (1) lecture de `decisions.md` au démarrage (journal des amendements humains, apprentissage doux, non prioritaire sur le SKILL) ; (2) section « Tracer les amendements » — réflexe de capture d'un amendement humain réel dans le journal, avec taxonomie fermée à 8 natures et incrément de récurrence. **Aucune auto-modification du SKILL** : l'agent ne promeut rien, ne change aucun statut, ne supprime aucune entrée — la promotion en règle est un acte humain fait au rituel de synthèse. Coexiste avec la boucle Analytics quantitative de `posts-valides.md` sans la dupliquer. |
 | v7 | 2026-08-07 | **Mode lot.** Ajout d'une section « Le mode lot » : quand une demande porte sur plusieurs posts (« les posts de la semaine », « prépare 5 posts », « une campagne »), suivre le workflow `workflows/campagne-lot.md`. Ce mode regroupe les arrêts en deux temps (cadrage groupé, validation groupée) sans alléger aucune règle de fond — la Porte n°1 est réexécutée par post. Le workflow ne s'active pas sous 2 posts et ne publie jamais. La logique de lot vit dans le fichier de workflow ; le SKILL n'y renvoie que via cette section. |
+| v8 | 2026-08-07 | **Décision direction — posts de circonstance.** Levée de la restriction sur le cas A (vœux, fête du travail, moments d'équipe), désormais autorisé sous deux conditions : substance (ancrage concret, jamais de vœux creux) et quota de 2/mois maximum. Maintien intégral du cas B (fêtes/journées liées à un critère protégé) : protection des personnes, non assouplie, ancrée dans « Personnes et sujets sensibles ». Réécriture de la section « Les posts de circonstance », reformulation du réflexe hérité (le défaut est le post *vide*, pas le sujet), de la table du mode simple et de la liste « Ce que tu ne fais jamais ». Alignement de `shared/ligne-editoriale.md` § 5 bis, `formats.md` (nouveau F7), `posts-valides.md`, `CLAUDE.md` règle 5 et `visual-social/references/exemples.md` § D3. |
