@@ -29,6 +29,10 @@ Ta sortie alimente l'agent **Publish (04)** via les fichiers exportés.
 4. `shared/ligne-editoriale.md` — le ton, les interdits
 5. `shared/personas.md` — pour qui on produit
 6. Le brief visuel du fichier `output/drafts/post-*.md` produit par l'agent 02
+7. `decisions.md` — le journal des amendements humains passés sur tes visuels.
+   Tu t'en sers pour ajuster tes productions vers ce que l'humain a tendance à
+   préférer (apprentissage doux). **Ce ne sont pas des règles** : en cas de
+   contradiction entre le journal et le SKILL, le SKILL prime toujours.
 
 Rappel des deux couleurs de marque, extraites du logo officiel :
 `#002C6A` bleu marine · `#F8D99B` sable. Contraste 9.7:1, conforme WCAG AAA.
@@ -177,6 +181,65 @@ composé. La légèreté porte sur le process, jamais sur la charte.
 
 **En cas de doute** : « c'est un ajustement ou une nouvelle production ? »
 Une question, puis tu appliques.
+
+---
+
+## Tracer les amendements
+
+C'est la boucle de feedback qualitative (niveau N2). Elle coexiste avec la
+boucle Analytics (agent 05, `references/exemples.md`) sans la dupliquer : le
+journal capte le feedback **humain** (ce que l'humain corrige sur un visuel), la
+boucle Analytics capte le feedback **du public** (quels formats visuels
+performent). Deux sources distinctes.
+
+**Le principe : la trace est automatique, la promotion en règle est humaine.**
+Tu enregistres les amendements dans `decisions.md`, mais tu **ne modifies jamais
+ton propre SKILL**. Un humain relit le journal et décide seul ce qui devient une
+règle, lors du rituel de synthèse décrit dans `decisions.md`.
+
+### Quand tu traces
+
+Quand l'humain **amende réellement** un visuel que tu as proposé — il change le
+mode de rendu, corrige une couleur, refait une mise en page, remplace un
+gabarit, retravaille un carrousel — et que cet amendement est visible dans la
+conversation, tu ajoutes **une entrée** dans `decisions.md`, au format défini
+là-bas.
+
+Avant d'écrire, vérifie si la **même nature d'écart** existe déjà dans le
+journal et **incrémente son compteur de récurrence** plutôt que de créer un
+doublon non relié.
+
+Chaque entrée porte **une seule** nature principale, prise dans cette liste
+fermée (identique à la taxonomie de `decisions.md`) :
+
+`mode` · `charte-couleur` · `typographie` · `composition` · `gabarit` · `lisibilité` · `véracité-visuelle` · `carrousel`
+
+Si l'amendement touche plusieurs aspects, choisis le plus significatif et
+mentionne les autres dans la raison.
+
+### Quand tu ne traces pas
+
+Tu ne traces jamais : tes propres itérations, les échanges de cadrage, les
+questions de clarification, ni un visuel validé **sans changement**. Seul un
+amendement réel — ou une demande explicite de tracer une décision — déclenche
+une entrée. Tu n'ajoutes jamais d'entrée pour te complimenter.
+
+### Comment tu le fais
+
+Discrètement. Tu n'annonces pas « j'ai tracé ta décision » à chaque fois. Une
+mention brève en fin de réponse suffit, du type « (noté au journal) », et
+seulement si c'est utile.
+
+### Ce que tu ne fais jamais dans cette boucle
+
+Tu **ne modifies jamais le SKILL**, tu ne changes jamais le statut « non
+promu », tu ne supprimes jamais d'entrée, tu ne promeus jamais un écart en
+règle. Ces actions relèvent du rituel humain, pas de toi.
+
+**Tracer un amendement ne dispense d'aucun contrôle.** La Porte n°1 (mode de
+rendu) et les règles de véracité visuelle restent prioritaires : le journal
+informe tes productions, il ne remplace jamais le contrôle des sources, ni la
+palette de marque, ni les interdits de représentation.
 
 ---
 
@@ -406,3 +469,4 @@ support public abîme directement la crédibilité.
 | v1 | 2026-07-18 | Version initiale. Intègre dès l'origine : la porte de mode de rendu (A/B/C), les règles de véracité alignées sur l'agent 02 v3, et l'interdit de représentation des personnes vulnérables identifiables. |
 | v2 | 2026-07-18 | **Analyse de sept visuels publiés** (`references/exemples.md`). Trois constats intégrés : (1) deux visuels sur sept seulement respectent le bleu `#002C6A` → règle de nuance durcie ; (2) un visuel affiche un tableau de bord Salesforce avec des chiffres fictifs lisibles comme les nôtres → interdit explicite des interfaces chiffrées ; (3) quatre visuels présentent un nom de marque déformé par génération d'image → règle du texte toujours composé. Ajout de `exemples.md` en lecture obligatoire, avec les acquis à conserver (bloc logo en-tête, hiérarchie de titre à deux niveaux). |
 | v3 | 2026-07-18 | Ajout de la section « Le mode simple » : les ajustements (recadrage, correction de couleur, variante de mise en page, aperçu) sont produits en direct, sans porte de mode ni deux directions. La charte et les règles de véracité restent intégralement applicables. |
+| v4 | 2026-08-07 | **Boucle de feedback N2.** Deux ajouts : (1) lecture de `decisions.md` au démarrage (journal des amendements humains, apprentissage doux, non prioritaire sur le SKILL) ; (2) section « Tracer les amendements » — réflexe de capture d'un amendement humain réel sur un visuel, avec taxonomie fermée à 8 natures propres au visuel et incrément de récurrence. **Aucune auto-modification du SKILL** : l'agent ne promeut rien, ne change aucun statut, ne supprime aucune entrée — la promotion est un acte humain fait au rituel de synthèse (SKILL, `gabarits.md` ou `exemples.md` selon la nature). Coexiste avec la boucle Analytics quantitative sans la dupliquer. |
