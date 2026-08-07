@@ -26,6 +26,11 @@ Systématiquement, dans cet ordre :
 4. `shared/retours-experience.md` — la matière première anonymisée des angles F1/F3,
    tirée de projets Salesforce réels. Elle te permet de proposer des sujets ancrés
    dans notre propre vécu de projet, pas seulement dans la veille externe.
+5. `decisions.md` — le journal des décisions de tri humaines sur tes veilles
+   passées (sujets écartés, rattachements corrigés, chiffres rejetés, angles
+   préférés). Tu t'en sers pour **mieux filtrer en amont**, vers ce que l'humain
+   a tendance à garder. **Ce ne sont pas des règles** : en cas de contradiction
+   entre le journal et le SKILL, le SKILL prime toujours.
 
 Si tu ne peux pas relier un sujet trouvé à **un persona ET un territoire éditorial**,
 il ne va pas dans le livrable. Sans exception.
@@ -242,6 +247,66 @@ Si la seule raison est « c'est d'actualité », le sujet est écarté.
 
 ---
 
+## Tracer les décisions de tri
+
+C'est la boucle de feedback qualitative (niveau N2). Elle coexiste avec la
+boucle Analytics quantitative (`agents/copy-social/references/posts-valides.md`,
+agent 05) sans la dupliquer : le journal capte le feedback **humain** (ce que
+l'humain garde ou écarte parmi tes propositions), la boucle Analytics capte le
+feedback **du public** (ce qui performe une fois publié). Deux sources
+distinctes.
+
+**Le principe : la trace est automatique, la promotion en règle est humaine.**
+Tu enregistres les décisions de tri dans `decisions.md`, mais tu **ne modifies
+jamais ton propre SKILL**. Un humain relit le journal et décide seul ce qui
+devient une règle, lors du rituel de synthèse décrit dans `decisions.md`.
+
+### Quand tu traces
+
+Quand l'humain **décide réellement** sur une proposition — il écarte un sujet,
+corrige un rattachement persona/territoire, rejette un chiffre insuffisamment
+sourcé, ou retient un angle différent du tien — que ce soit dans la même session
+ou dans un retour ultérieur sur le livrable de veille, tu ajoutes **une entrée**
+dans `decisions.md`, au format défini là-bas.
+
+Avant d'écrire, vérifie si la **même nature d'écart** existe déjà dans le
+journal et **incrémente son compteur de récurrence** plutôt que de créer un
+doublon non relié.
+
+Chaque entrée porte **une seule** nature principale, prise dans cette liste
+fermée (identique à la taxonomie de `decisions.md`) :
+
+`sujet-écarté` · `légitimité` · `rattachement` · `source` · `angle-préféré` · `fraîcheur` · `priorité` · `doublon`
+
+Si la décision touche plusieurs aspects, choisis le plus significatif et
+mentionne les autres dans la raison.
+
+### Quand tu ne traces pas
+
+Tu ne traces jamais : tes propres itérations de recherche, les reformulations de
+requêtes, les échanges de cadrage, ni un livrable accepté **tel quel**. Seule
+une décision de tri réelle — ou une demande explicite de tracer une décision —
+déclenche une entrée. Tu n'ajoutes jamais d'entrée pour te complimenter.
+
+### Comment tu le fais
+
+Discrètement. Tu n'annonces pas « j'ai tracé ta décision » à chaque fois. Une
+mention brève en fin de réponse suffit, du type « (noté au journal) », et
+seulement si c'est utile.
+
+### Ce que tu ne fais jamais dans cette boucle
+
+Tu **ne modifies jamais le SKILL**, tu ne changes jamais le statut « non
+promu », tu ne supprimes jamais d'entrée, tu ne promeus jamais un écart en
+règle. Ces actions relèvent du rituel humain, pas de toi.
+
+**Tracer une décision ne dispense d'aucune vérification.** Le filtre de
+légitimité et le protocole de sourcing (Mission D) restent prioritaires : le
+journal affine ton filtrage en amont, il ne remplace jamais la remontée à la
+source primaire ni le rattachement persona + territoire obligatoire.
+
+---
+
 ## Livrable
 
 **Fichier** : `output/drafts/research-AAAA-MM-JJ.md`
@@ -374,3 +439,12 @@ Si la seule raison est « c'est d'actualité », le sujet est écarté.
 - Présenter un article de blog d'agence comme une étude
 - Proposer un sujet parce qu'il « fait le buzz »
 - Prétendre avoir consulté LinkedIn directement
+
+---
+
+## Historique des corrections
+
+| Version | Date | Motif |
+|---|---|---|
+| v1 | — | Version initiale (rétroactif). |
+| v2 | 2026-08-07 | **Boucle de feedback N2.** Deux ajouts : (1) lecture de `decisions.md` au démarrage (journal des décisions de tri humaines, pour affiner le filtrage en amont, non prioritaire sur le SKILL) ; (2) section « Tracer les décisions de tri » — réflexe de capture d'une décision humaine réelle (sujet écarté, rattachement corrigé, chiffre rejeté, angle préféré), avec taxonomie fermée à 8 natures propres à la veille et incrément de récurrence. **Aucune auto-modification du SKILL** : l'agent ne promeut rien, ne change aucun statut, ne supprime aucune entrée — la promotion est un acte humain fait au rituel de synthèse (SKILL, `research-sources.md`, ou « à remonter » à la direction selon la nature). Coexiste avec la boucle Analytics quantitative sans la dupliquer. |
