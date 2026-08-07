@@ -199,6 +199,25 @@ apporter.
 
 ---
 
+## Le mode lot
+
+Quand une demande porte sur **plusieurs posts à la fois** (« les posts de la
+semaine », « prépare 5 posts », « une campagne »), tu suis le workflow
+`workflows/campagne-lot.md`.
+
+Ce mode **regroupe les arrêts en deux temps** — un cadrage groupé du lot, puis
+une validation groupée du lot — au lieu d'un arrêt par post. Il **n'allège
+aucune règle de fond** : la Porte n°1 (inventaire des faits) est réexécutée pour
+**chaque** post du lot, et tous les contrôles habituels s'appliquent post par
+post (formulations bannies, une seule offre, personnes sensibles, aucun chiffre
+non sourcé). Un manque de matière sur un post ne bloque pas le lot : ce post sort
+avec ses `[À FOURNIR]`, jamais avec un fait inventé pour « faire complet ».
+
+En dessous de **2 posts**, tu restes en mode normal : un post = le process en
+5 temps classique. Le workflow ne s'active pas pour un post unique.
+
+---
+
 ## Tracer les amendements
 
 C'est la boucle de feedback qualitative (niveau N2). Elle coexiste avec la
@@ -750,3 +769,4 @@ Passe chaque point. Un seul ❌ et tu réécris.
 | v4 | 2026-07-18 | **Deux ajouts demandés.** (1) Section « Demander ce qui manque — au moment des angles » : la demande d'informations est explicite, groupée, avec exemple de réponse attendue et conséquence si rien n'est fourni. (2) Section « Le mode simple » : les demandes courtes (reformulation, commentaire, hook, variante) sont traitées en direct, sans les trois angles ni le livrable — les règles de fond restent intégralement applicables. |
 | v5 | 2026-08-07 | **Ajout d'une lecture obligatoire.** `shared/retours-experience.md` intégré à la liste « À lire AVANT toute rédaction » : matière première anonymisée (projets Salesforce réels) qui débloque le format F1. Rappel explicite que ce fichier ne lève pas la Porte n°1 — un chiffre de résultat absent de la source reste `[À FOURNIR]`. |
 | v6 | 2026-08-07 | **Boucle de feedback N2.** Deux ajouts : (1) lecture de `decisions.md` au démarrage (journal des amendements humains, apprentissage doux, non prioritaire sur le SKILL) ; (2) section « Tracer les amendements » — réflexe de capture d'un amendement humain réel dans le journal, avec taxonomie fermée à 8 natures et incrément de récurrence. **Aucune auto-modification du SKILL** : l'agent ne promeut rien, ne change aucun statut, ne supprime aucune entrée — la promotion en règle est un acte humain fait au rituel de synthèse. Coexiste avec la boucle Analytics quantitative de `posts-valides.md` sans la dupliquer. |
+| v7 | 2026-08-07 | **Mode lot.** Ajout d'une section « Le mode lot » : quand une demande porte sur plusieurs posts (« les posts de la semaine », « prépare 5 posts », « une campagne »), suivre le workflow `workflows/campagne-lot.md`. Ce mode regroupe les arrêts en deux temps (cadrage groupé, validation groupée) sans alléger aucune règle de fond — la Porte n°1 est réexécutée par post. Le workflow ne s'active pas sous 2 posts et ne publie jamais. La logique de lot vit dans le fichier de workflow ; le SKILL n'y renvoie que via cette section. |
