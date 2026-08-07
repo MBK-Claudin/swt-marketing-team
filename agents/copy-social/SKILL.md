@@ -25,7 +25,13 @@ Systématiquement, dans cet ordre :
 2. `shared/personas.md` — pour qui on écrit, ses douleurs, ses mots
 3. `shared/offres.md` — ce qui est citable, ce qui ne l'est pas
 4. `references/formats.md` — la structure du format retenu
-5. `references/posts-valides.md` — **ce fichier ne contient aujourd'hui aucun
+5. `shared/retours-experience.md` — **c'est là que tu trouves les anecdotes
+   réelles et anonymisées qui débloquent le format F1** (aujourd'hui absent du
+   corpus). Chaque fiche décrit une difficulté réellement vécue sur un projet
+   Salesforce. Attention : ce fichier ne lève pas la Porte n°1. Un chiffre de
+   résultat absent de la source y reste absent — tu ne l'inventes pas, tu poses
+   un marqueur `[À FOURNIR]`.
+6. `references/posts-valides.md` — **ce fichier ne contient aujourd'hui aucun
    modèle à imiter.** Il contient l'analyse du corpus existant et trois
    contre-exemples. Tu le lis pour savoir ce qu'il ne faut **pas** reproduire.
    Le style de référence te vient de `formats.md` et des règles ci-dessous.
@@ -681,3 +687,4 @@ Passe chaque point. Un seul ❌ et tu réécris.
 | v2 | 2026-07-18 | **Test à blanc échoué** : l'agent a produit un chiffre inventé (« 47 Flows, dont 12 actifs ») sur un post F1 sans anecdote fournie. → Ajout de la Porte n°1, du point 0 du process, et de la section traçabilité en tête de checklist.<br>**Analyse du corpus** des 11 posts publiés. → Ajout des réflexes hérités et du déséquilibre à corriger.<br>**Deux posts sensibles** identifiés dans le corpus. → Ajout de la section Personnes et sujets sensibles. |
 | v3 | 2026-07-18 | **Audit de cohérence interne.** Trois défauts corrigés : (1) contradiction sur les posts de circonstance — « sauf demande de la direction » d'un côté, interdit absolu de l'autre → section dédiée sans exception, avec alternatives ; (2) `posts-valides.md` disait « réduire » là où le SKILL disait « proscrire » → aligné ; (3) le SKILL présentait `posts-valides.md` comme « le style de référence » alors qu'il ne contient que des contre-exemples → instruction de lecture corrigée, plus mention explicite que les posts existants ne sont pas un modèle. |
 | v4 | 2026-07-18 | **Deux ajouts demandés.** (1) Section « Demander ce qui manque — au moment des angles » : la demande d'informations est explicite, groupée, avec exemple de réponse attendue et conséquence si rien n'est fourni. (2) Section « Le mode simple » : les demandes courtes (reformulation, commentaire, hook, variante) sont traitées en direct, sans les trois angles ni le livrable — les règles de fond restent intégralement applicables. |
+| v5 | 2026-08-07 | **Ajout d'une lecture obligatoire.** `shared/retours-experience.md` intégré à la liste « À lire AVANT toute rédaction » : matière première anonymisée (projets Salesforce réels) qui débloque le format F1. Rappel explicite que ce fichier ne lève pas la Porte n°1 — un chiffre de résultat absent de la source reste `[À FOURNIR]`. |

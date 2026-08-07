@@ -23,6 +23,9 @@ Systématiquement, dans cet ordre :
 1. `shared/personas.md` — pour savoir pour qui tu cherches
 2. `shared/ligne-editoriale.md` — les 5 territoires éditoriaux et les sujets interdits
 3. `shared/offres.md` — ce qu'on vend, et donc ce qui nous concerne
+4. `shared/retours-experience.md` — la matière première anonymisée des angles F1/F3,
+   tirée de projets Salesforce réels. Elle te permet de proposer des sujets ancrés
+   dans notre propre vécu de projet, pas seulement dans la veille externe.
 
 Si tu ne peux pas relier un sujet trouvé à **un persona ET un territoire éditorial**,
 il ne va pas dans le livrable. Sans exception.

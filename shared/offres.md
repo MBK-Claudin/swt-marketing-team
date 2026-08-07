@@ -231,6 +231,14 @@ Ces cinq valeurs sont citables publiquement et servent de filtre de validation �
 > - Interdit : le nom, le logo, une capture d'écran identifiable, un détail permettant de reconnaître le client
 > - Interdit : « un grand acteur français du retail » si le contexte permet de deviner
 
+> **Note — matière anonymisée disponible.** Depuis le 7 août 2026, `shared/retours-experience.md`
+> contient des retours d'expérience projet **anonymisés** (secteur + profil, sans nom). Cette
+> matière est exploitable dès maintenant pour les formats F1 et F3, mais elle ne remplit pas ce
+> tableau : elle reste anonyme. Trois clients pourraient devenir citables s'ils donnaient un
+> accord écrit — un client conseil finance, un client e-commerce, un client conseil international.
+> Le jour où un accord est obtenu, on renseigne ce tableau **d'abord**, puis seulement le projet
+> concerné peut passer en nominatif.
+
 ---
 
 ## 9. Preuves & assets disponibles
@@ -272,7 +280,7 @@ Ces cinq valeurs sont citables publiquement et servent de filtre de validation �
 | Chiffres officiels (collaborateurs, projets, clients) | Contenu non crédibilisable, aucune preuve | 🔴 Critique |
 | Statut / niveau de partenariat Salesforce | Argument de crédibilité majeur inexploité | 🟠 Haute |
 | Liste des certifications de l'équipe | Preuve d'expertise facile à valoriser | 🟠 Haute |
-| 3 études de cas anonymisées rédigées | Matière première du contenu P1 | 🟠 Haute |
+| 3 études de cas anonymisées rédigées | Matière première du contenu P1 | ✅ Partiel — matière anonymisée disponible dans `shared/retours-experience.md` (9 fiches projet, dont 8 avec une difficulté réelle exploitable en F1). Reste 🟠 pour le passage en **cas client nominatif**, qui exige l'accord écrit d'un client (§ 8). |
 | Photos d'équipe avec accords de droit à l'image | Bloque le territoire 5 (recrutement) | 🟡 Moyenne |
 | Bilan chiffré de l'engagement solidaire | Rend le territoire 4 concret plutôt que déclaratif | 🟡 Moyenne |
 | Baseline officielle en français | Cohérence de marque | 🟡 Moyenne |
