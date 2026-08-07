@@ -35,6 +35,10 @@ Systématiquement, dans cet ordre :
    modèle à imiter.** Il contient l'analyse du corpus existant et trois
    contre-exemples. Tu le lis pour savoir ce qu'il ne faut **pas** reproduire.
    Le style de référence te vient de `formats.md` et des règles ci-dessous.
+7. `decisions.md` — le journal des amendements humains passés sur tes
+   productions. Tu t'en sers pour ajuster tes productions vers ce que l'humain a
+   tendance à préférer (apprentissage doux). **Ce ne sont pas des règles** : en
+   cas de contradiction entre le journal et le SKILL, le SKILL prime toujours.
 
 Si l'input vient de l'agent Research (`output/drafts/research-*.md`), le lire
 en entier avant de commencer, y compris la section « non vérifié ».
@@ -192,6 +196,63 @@ post complet ? » Une seule question, puis tu appliques.
 Tu ne déclares pas le mode. L'utilisateur demande une reformulation, tu
 reformules. Annoncer « je passe en mode simple » ajoute du bruit sans rien
 apporter.
+
+---
+
+## Tracer les amendements
+
+C'est la boucle de feedback qualitative (niveau N2). Elle coexiste avec la
+boucle Analytics de `references/posts-valides.md` sans la dupliquer : le journal
+capte le feedback **humain** (ce que l'humain corrige), la boucle Analytics
+capte le feedback **du public** (ce qui performe). Deux sources distinctes.
+
+**Le principe : la trace est automatique, la promotion en règle est humaine.**
+Tu enregistres les amendements dans `decisions.md`, mais tu **ne modifies jamais
+ton propre SKILL**. Un humain relit le journal et décide seul ce qui devient une
+règle, lors du rituel de synthèse décrit dans `decisions.md`.
+
+### Quand tu traces
+
+Quand l'humain **amende réellement** une production que tu as proposée — il
+reformule, coupe, réécrit le hook, corrige un fait, change le CTA, réoriente
+l'angle — et que cet amendement est visible dans la conversation, tu ajoutes
+**une entrée** dans `decisions.md`, au format défini là-bas.
+
+Avant d'écrire, vérifie si la **même nature d'écart** existe déjà dans le
+journal et **incrémente son compteur de récurrence** plutôt que de créer un
+doublon non relié.
+
+Chaque entrée porte **une seule** nature principale, prise dans cette liste
+fermée (identique à la taxonomie de `decisions.md`) :
+
+`ton` · `structure` · `longueur` · `hook` · `véracité` · `angle` · `CTA` · `charte`
+
+Si l'amendement touche plusieurs aspects, choisis le plus significatif et
+mentionne les autres dans la raison.
+
+### Quand tu ne traces pas
+
+Tu ne traces jamais : tes propres relectures, les échanges de cadrage, les
+questions de clarification, ni une production validée **sans changement**. Seul
+un amendement réel — ou une demande explicite de tracer une décision —
+déclenche une entrée. Tu n'ajoutes jamais d'entrée pour te complimenter.
+
+### Comment tu le fais
+
+Discrètement. Tu n'annonces pas « j'ai tracé ta décision » à chaque fois. Une
+mention brève en fin de réponse suffit, du type « (noté au journal) », et
+seulement si c'est utile.
+
+### Ce que tu ne fais jamais dans cette boucle
+
+Tu **ne modifies jamais le SKILL**, tu ne changes jamais le statut « non
+promu », tu ne supprimes jamais d'entrée, tu ne promeus jamais un écart en
+règle. Ces actions relèvent du rituel humain, pas de toi.
+
+**Tracer un amendement ne dispense d'aucune vérification.** La Porte n°1
+(inventaire des faits) et toutes les règles de fond restent prioritaires : le
+journal informe tes productions, il ne remplace jamais le contrôle de véracité,
+ni les formulations bannies, ni les règles sur les personnes sensibles.
 
 ---
 
@@ -688,3 +749,4 @@ Passe chaque point. Un seul ❌ et tu réécris.
 | v3 | 2026-07-18 | **Audit de cohérence interne.** Trois défauts corrigés : (1) contradiction sur les posts de circonstance — « sauf demande de la direction » d'un côté, interdit absolu de l'autre → section dédiée sans exception, avec alternatives ; (2) `posts-valides.md` disait « réduire » là où le SKILL disait « proscrire » → aligné ; (3) le SKILL présentait `posts-valides.md` comme « le style de référence » alors qu'il ne contient que des contre-exemples → instruction de lecture corrigée, plus mention explicite que les posts existants ne sont pas un modèle. |
 | v4 | 2026-07-18 | **Deux ajouts demandés.** (1) Section « Demander ce qui manque — au moment des angles » : la demande d'informations est explicite, groupée, avec exemple de réponse attendue et conséquence si rien n'est fourni. (2) Section « Le mode simple » : les demandes courtes (reformulation, commentaire, hook, variante) sont traitées en direct, sans les trois angles ni le livrable — les règles de fond restent intégralement applicables. |
 | v5 | 2026-08-07 | **Ajout d'une lecture obligatoire.** `shared/retours-experience.md` intégré à la liste « À lire AVANT toute rédaction » : matière première anonymisée (projets Salesforce réels) qui débloque le format F1. Rappel explicite que ce fichier ne lève pas la Porte n°1 — un chiffre de résultat absent de la source reste `[À FOURNIR]`. |
+| v6 | 2026-08-07 | **Boucle de feedback N2.** Deux ajouts : (1) lecture de `decisions.md` au démarrage (journal des amendements humains, apprentissage doux, non prioritaire sur le SKILL) ; (2) section « Tracer les amendements » — réflexe de capture d'un amendement humain réel dans le journal, avec taxonomie fermée à 8 natures et incrément de récurrence. **Aucune auto-modification du SKILL** : l'agent ne promeut rien, ne change aucun statut, ne supprime aucune entrée — la promotion en règle est un acte humain fait au rituel de synthèse. Coexiste avec la boucle Analytics quantitative de `posts-valides.md` sans la dupliquer. |
