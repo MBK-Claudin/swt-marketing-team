@@ -17,11 +17,19 @@ valide avant publication.
 Chaque agent lit son propre `SKILL.md` en entier avant de travailler. Le detail du
 fonctionnement, des règles absolues et de la chaîne de production est dans [CLAUDE.md](CLAUDE.md).
 
+Chaque agent tient aussi un **journal de décisions** (`agents/<agent>/decisions.md`) : les
+corrections humaines apportées à ses productions y sont tracées automatiquement, et
+peuvent être promues en règle dure par un humain — un apprentissage doux et réversible, lu
+par l'agent à chaque démarrage. L'agent Copy sait en plus produire un **lot de 2 à 8 posts**
+en une seule session (« les posts de la semaine », « une campagne ») via
+[`workflows/campagne-lot.md`](workflows/campagne-lot.md), sans alléger aucune règle de fond.
+
 ## Structure
 
 ```
-shared/     Référentiel commun : ligne éditoriale, personas, brand kit, offres
-agents/     Les trois agents (SKILL.md + références)
+shared/     Référentiel commun : ligne éditoriale, personas, brand kit, offres, retours d'expérience
+agents/     Les trois agents (SKILL.md + références + journal de décisions)
+workflows/  Orchestrations multi-posts (campagne en lot pour l'agent Copy)
 output/     Productions des agents — jamais une source de vérité
 ```
 
@@ -29,8 +37,10 @@ output/     Productions des agents — jamais une source de vérité
 
 Le corpus existant (11 posts, 7 visuels) a été jugé non reproductible en l'état ; ces agents
 visent à relever le niveau, pas à industrialiser l'existant. Plusieurs données bloquantes
-(autorisations clients, chiffres officiels, anecdotes de projet…) restent à fournir par la
-direction — voir [CLAUDE.md § 8](CLAUDE.md#8-état-des-blocages).
+(autorisations clients, chiffres officiels, liste des concurrents…) restent à fournir par la
+direction — voir [CLAUDE.md § 8](CLAUDE.md#8-état-des-blocages). Les anecdotes de projet, elles,
+ne bloquent plus : `shared/retours-experience.md` fournit depuis le 7 août 2026 une matière
+anonymisée qui débloque le format F1.
 
 ## Vérifications demandées
 
@@ -56,19 +66,20 @@ détermine 60 % du calendrier éditorial — voir la section « À faire valider
 
 ### 2. Les formats de post — à valider
 
-Six formats détaillés dans
+Sept formats détaillés dans
 [`agents/copy-social/references/formats.md`](agents/copy-social/references/formats.md).
 Chaque post doit correspondre à l'un d'eux ; les statuts ci-dessous reflètent les contraintes
 bloquantes déjà documentées dans ce fichier.
 
 | # | Format | Persona | Statut |
 |---|---|---|---|
-| F1 | Retour d'expérience | P1, P2 | 🔴 Bloqué — aucune anecdote projet collectée |
+| F1 | Retour d'expérience | P1, P2 | ✅ Produisible — matière anonymisée dans `shared/retours-experience.md` |
 | F2 | Décryptage technique | P2 | ✅ Produisible immédiatement |
-| F3 | Cas client anonymisé | P1, P3 | 🔴 Bloqué — aucune autorisation client |
+| F3 | Cas client anonymisé | P1, P3 | 🔴 Bloqué en nominatif — anonymisation stricte possible, relecture direction obligatoire |
 | F4 | Chiffre / donnée | P1, P3 | 🟠 Dépend de la veille |
 | F5 | Coulisses & équipe | P4 | 🟠 Bloqué en version photo |
 | F6 | Engagement & RSE | P5, P4 | ✅ Produisible |
+| F7 | Circonstance & moments d'équipe | P4, P5 | ✅ Produisible sous conditions — substance + 2/mois max (voir § 6) |
 
 ### 3. Recommandation — génération des visuels
 
@@ -150,10 +161,11 @@ chiffre, y compris quand l'utilisateur leur en fournit un qui n'est pas au réf�
 une garantie voulue, mais elle rend le contenu déclaratif tant que ces données manquent.
 *Action* : valider une liste de chiffres communicables.
 
-**5.3 Les anecdotes de projet — 🔴 bloquant.** Le format F1 nécessite des situations réelles
-vécues. Il n'en existe aucune au référentiel.
-*Action* : recueillir auprès des consultants trois récits de projets ayant rencontré une
-difficulté, avec ce qui en a été retiré. Anonymisation assurée ensuite.
+**5.3 Les anecdotes de projet — ✅ résolu le 7 août 2026.** `shared/retours-experience.md`
+fournit désormais des retours d'expérience projet anonymisés (secteur + profil, sans nom),
+ce qui débloque le format F1 et alimente F3 en version anonymisée. Reste distinct de 5.1 :
+faire passer un de ces projets en cas client **nominatif** exige toujours un accord écrit du
+client (`offres.md` § 8).
 
 **5.4 Les accords de droit à l'image — 🟠 haute.** Aucune photo d'équipe utilisable. Cela
 bloque le format F5 en version photo et tout contenu de marque employeur illustré.
@@ -164,30 +176,38 @@ reste théorique sans les noms des concurrents réellement rencontrés en appel 
 *Action* : direction commerciale — les 5 concurrents les plus fréquents, et les motifs de
 gain et de perte des derniers deals.
 
-### 6. Une règle à valider explicitement
+### 6. Une règle déjà tranchée — posts de circonstance sous conditions
 
-Les agents sont configurés pour refuser certaines demandes, y compris lorsqu'elles viennent
-de la direction :
+Jusqu'au 7 août 2026, les agents refusaient catégoriquement tout post de circonstance. **La
+direction a depuis tranché** (voir `shared/ligne-editoriale.md` § 5 bis et
+[CLAUDE.md règle 5](CLAUDE.md#5-les-règles-absolues)) : ce refus est levé, remplacé par une
+règle à deux cas.
 
-- Les posts de circonstance (vœux, fêtes, journées internationales)
-- Les posts nommant une personne en l'associant à un critère protégé
+- **Cas A — autorisé sous deux conditions.** Vœux, fêtes de fin d'année, fête du travail,
+  moments d'équipe génériques : substance obligatoire (ancrage sur un fait ou un bilan,
+  jamais un vœu creux) **et** quota de 2 posts de circonstance par mois maximum.
+- **Cas B — refus maintenu.** Fêtes ou journées liées à un critère protégé (religion,
+  genre, origine, handicap…) dès qu'elles conduisent à nommer ou rendre identifiable une
+  personne sur ce critère. Cette protection n'est pas assouplie.
+
+Ce qui n'a pas bougé — les agents continuent de refuser, y compris sur consigne de la
+direction :
+
+- Les posts nommant une personne en l'associant à un critère protégé (cas B ci-dessus)
 - L'ajout d'un logo tiers sur un visuel
 - L'affichage de chiffres non sourcés
 
-Ces refus sont volontaires. Ce sont des règles issues des fichiers de référence, et une
+Ces refus restent volontaires. Ce sont des règles issues des fichiers de référence, et une
 consigne donnée en conversation ne suffit pas à les lever : il faut modifier le fichier
 concerné.
 
-C'est ce qui distingue un agent qui fait progresser le niveau éditorial d'un agent qui
-automatise les habitudes existantes. Si nous laissions une porte de sortie, l'ancienne
-pratique reviendrait dès la première demande urgente.
+Concrètement : en décembre, si quelqu'un demande un post de vœux, l'agent ne le refuse plus
+par principe — il le rédige avec un ancrage concret (bilan factuel de l'année) et signale
+s'il pense que le quota mensuel est déjà atteint. C'est le comportement attendu depuis la
+décision du 7 août 2026, pas un relâchement de la ligne éditoriale.
 
-Concrètement : en décembre, si quelqu'un demande un post de vœux, l'agent refusera et
-proposera un bilan factuel de l'année à la place. C'est le comportement attendu, pas un
-dysfonctionnement.
-
-Si tu souhaites lever une de ces règles, la discussion doit porter sur la ligne éditoriale —
-pas se régler post par post.
+Si tu souhaites ajuster l'une de ces règles, la discussion doit porter sur la ligne
+éditoriale — pas se régler post par post.
 
 ## Déploiement
 
@@ -201,8 +221,10 @@ les Skills personnalisées — pas de reformatage de contenu nécessaire.
 1. Un admin du workspace active les Skills personnalisées (Settings → Capabilities).
 2. Chaque dossier d'agent (`agents/research-marketing/`, `agents/copy-social/`,
    `agents/visual-social/`) est packagé en zip avec son `SKILL.md`, son dossier
-   `references/`, **et** l'ensemble de `shared/` — les Skills n'ont pas de dossier commun
-   entre elles, donc `shared/` doit être dupliqué dans chaque zip.
+   `references/`, `decisions.md`, **et** l'ensemble de `shared/` — les Skills n'ont pas de
+   dossier commun entre elles, donc `shared/` doit être dupliqué dans chaque zip. Le zip de
+   `copy-social/` embarque en plus `workflows/campagne-lot.md`, sans quoi le mode lot casse
+   une fois packagé.
 3. L'admin upload les trois zips (Settings → Capabilities → Skills → Upload) et les active
    pour le groupe/les utilisateurs marketing.
 4. Usage : chat normal sur claude.ai — le bon agent s'active tout seul selon la demande,
@@ -235,9 +257,12 @@ swt-marketing-team/
 │   ├── ligne-editoriale.md
 │   ├── personas.md                ← à valider
 │   ├── brand-kit.md
-│   └── offres.md
-└── agents/
-    ├── research-marketing/        SKILL.md + sources + concurrents
-    ├── copy-social/               SKILL.md + formats ← à valider + posts-valides
-    └── visual-social/             SKILL.md + gabarits + exemples
+│   ├── offres.md
+│   └── retours-experience.md      Matière anonymisée F1/F3, depuis le 7 août 2026
+├── agents/
+│   ├── research-marketing/       SKILL.md + decisions.md + sources + concurrents
+│   ├── copy-social/               SKILL.md + decisions.md + formats ← à valider + posts-valides
+│   └── visual-social/             SKILL.md + decisions.md + gabarits + exemples
+└── workflows/
+    └── campagne-lot.md            Orchestration d'un lot de posts pour l'agent Copy
 ```
